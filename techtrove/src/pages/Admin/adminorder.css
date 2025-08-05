@@ -1,0 +1,190 @@
+/* 📦 Admin Orders Container */
+.admin-orders-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures smooth scrolling */
+  }
+  
+  .admin-orders-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* ✅ Scrollable Table Wrapper */
+  .orders-table-wrapper {
+    width: 100%;
+    max-height: 500px; /* Limits max height for vertical scrolling */
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* ✅ Scrollable Table Container */
+  .orders-table-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+  }
+  
+  /* 📜 Orders Table */
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px; /* Prevents shrinking */
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; /* Prevents text wrapping */
+  }
+  
+  .orders-table th {
+    background: #222831; /* Dark background */
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .orders-table tr:nth-child(even) {
+    background: #f8f9fa;
+  }
+  
+  .orders-table tr:hover {
+    background: #f1f1f1;
+  }
+  
+  /* 📌 Status Labels */
+  .status {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* 🎨 Status Colors */
+  .status.pending {
+    background: #ffc107;
+    color: #333;
+  }
+  
+  .status.processing {
+    background: #17a2b8;
+    color: #fff;
+  }
+  
+  .status.shipped {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  .status.delivered {
+    background: #28a745;
+    color: #fff;
+  }
+  
+  .status.cancelled {
+    background: #dc3545;
+    color: #fff;
+  }
+  
+  /* 📱 Responsive Styles */
+  @media (max-width: 768px) {
+    .admin-orders-container {
+      padding: 15px;
+    }
+  
+    .orders-table {
+      min-width: 600px;
+    }
+  
+    .orders-table th,
+    .orders-table td {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .status {
+      font-size: 10px;
+      padding: 4px 6px;
+    }
+  }
+  /* === Modal Overlay === */
+.order-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* ✅ Appear on top of everything */
+}
+
+/* === Modal Content Box === */
+.order-modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* === Modal Heading === */
+.order-modal-content h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+/* === Item List === */
+.order-items-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.order-items-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  line-height: 1.6;
+}
+
+/* === Buttons === */
+.close-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  margin-top: 1rem;
+}
+
+.view-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+  

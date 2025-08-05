@@ -1,0 +1,68 @@
+
+/* Add Product Button */
+.add-product-btn {
+  align-self: flex-end; /* Align the button to the right */
+  display: inline-flex;
+  align-items: center;
+  background-color: #000;
+  color: #ffffff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.add-product-btn:hover {
+  background-color: #333;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group input, .form-group select {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  background-color: #f1f1f1;
+  color: #333;
+  width: 100%;
+}
+
+.form-group input:focus, .form-group select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Submit Button */
+.addproduct-button {
+  background-color: #E94560;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  border: none;
+}
+
+.addproduct-button:hover {
+  background-color: #d73750;
+}
+/* Form Container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 100%;
+}
